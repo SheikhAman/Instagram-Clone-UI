@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/widget/bottombar_widget.dart';
+import 'package:myapp/widget/post_widget.dart';
 import 'package:myapp/widget/story.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -39,7 +40,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: StoryWidget(),
+      body: Column(
+        children: [
+          StoryWidget(),
+          Divider(
+            color: Colors.grey,
+          ),
+          Expanded(child: PostWidget()),
+        ],
+      ),
       bottomNavigationBar: BottombarWidget(),
     );
   }
