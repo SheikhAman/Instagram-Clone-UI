@@ -15,6 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xfff8faf8),
         leading: Icon(
           Icons.camera_alt_outlined,
           size: 40,
@@ -27,12 +28,16 @@ class _HomeScreenState extends State<HomeScreen> {
             decoration: TextDecoration.none,
             fontFamily: 'Billabong',
             fontSize: 32,
+            color: Colors.black,
           ),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.search),
+            icon: Icon(
+              Icons.search,
+              color: Colors.black,
+            ),
           ),
           IconButton(
             onPressed: () {},
